@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="cmn-hans">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name=viewport content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1,maximum-scale=1">
+    <meta name=applicable-device content="pc,mobile">
+    <!-- some meta tags, important for SEO"-->
+    <meta name="description" content="put a short description in here" />
+    <meta name="keywords" content="put your important keywords in here" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <title>查找数组元素位置</title>
+    <script type="text/javascript">
+    // 题目描述 ：找出元素 item 在给定数组 arr 中的位置
+    // 输出描述:：如果数组中存在 item，则返回元素在数组中的位置，否则返回 -1
+    //例如：indexOf([1,2,3,4,5],3)  返回 2
+    //
+    //
+    /*   循环比对注意事项：
+     1.当数组中有一个数满足条件，则不会执行另外输出-1
+     2.当数组中找不到满足条件的元素时，最后输出-1	
+        */
+    window.onload = function() {
+        function indexOf(arr, item) {
+            var flag = 0; //初始化用来标记是否找到对应元素 0：未找到 1：找到
+            var pos = []; //存放找到的元素索引值,有可能有重复的，使用数组
+            for (var i = 0; i < arr.length; i++) { //循环数组
+                if (arr[i] == item) { //第i位置的元素==item
+                    pos.push(i); //找到的位置索引值放入新的数组内
+                    flag = 1; //找了
+                } else {
+                	     flag = 0;  //没找到
+                    continue;    //继续循环
+               
+                }
+            }
+            if (flag == 1) {
+                console.log(item + '的位置是第：');
+                for (var i = 0; i < pos.length; i++) {
+                    console.log(pos[i] + 1+'位');
+                }
+            } else {
+                console.log('-1');
+            }
+        }
+           indexOf([2, 3, 4, 5,4], 4); 
+    }
+    </script>
+</head>
+<body>
+    <h1>查找数组元素位置</h1>
+    <p>题目描述 ：找出元素 item 在给定数组 arr 中的位置</p>
+    <p>输出描述:：如果数组中存在 item，则返回元素在数组中的位置，否则返回 -1</p>
+    <p>例如：indexOf([1,2,3,4,5],3) 返回 2</p>
+</body>
+</html>
