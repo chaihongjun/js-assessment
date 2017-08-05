@@ -22,6 +22,6 @@
 18. https://chaihongjun.github.io/js-assessment/18.html (完全等同)
 19. https://chaihongjun.github.io/js-assessment/19.html (计时器)
 20. https://chaihongjun.github.io/js-assessment/20.html (流程控制)
-21. https://chaihongjun.github.io/js-assessment/21.bak.html (数组合并)
+21. https://chaihongjun.github.io/js-assessment/21.bak.html (mezuo)
 
 
