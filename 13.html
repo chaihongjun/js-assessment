@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="cmn-hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name=viewport content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1,maximum-scale=1">
+    <meta name=applicable-device content="pc,mobile">
+    <!-- some meta tags, important for SEO"-->
+    <meta name="description" content="put a short description in here" />
+    <meta name="keywords" content="put your important keywords in here" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <title>求二次方</title>
+    <script type="text/javascript">
+    window.onload = function() {
+        function square(arr) {
+            var newarr = arr.slice(); //复制数组
+            for (var i = 0; i < newarr.length; i++) {
+                newarr[i] = newarr[i] * newarr[i];
+            }
+            console.log(newarr);
+        }
+        // 
+        square([18,79,8,96,90,23]);
+    }
+
+    </script>
+</head>
+
+<body>
+    <h1>求二次方</h1>
+    <p>题目描述 ：为数组 arr 中的每个元素求二次方。不要直接修改数组 arr，结果返回新的数组</p>
+    <p>例如：square([1,2,3,4])返回 [1,4,9,16]</p>
+</body>
+
+</html>
