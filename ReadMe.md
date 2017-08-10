@@ -23,5 +23,10 @@
 19. https://chaihongjun.github.io/js-assessment/19.html (计时器)
 20. https://chaihongjun.github.io/js-assessment/20.html (流程控制)
 21. https://chaihongjun.github.io/js-assessment/21.bak.html (mezuo)
+..
+26. https://chaihongjun.github.io/js-assessment/26.html (使用 arguments)
+30. https://chaihongjun.github.io/js-assessment/30.html (或运算)
+31. https://chaihongjun.github.io/js-assessment/31.html (且运算)
+32. https://chaihongjun.github.io/js-assessment/32.html (模块)
 
 
